@@ -1,0 +1,7 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: ['build', '-t', 'us-central1-docker.pkg.dev/argo-local-ronanww/docker-test/sample-image', '.']
+images:
+- 'us-central1-docker.pkg.dev/argo-local-ronanww/docker-test/sample-image'
+options:
+  requested_verify_option: VERIFIED
